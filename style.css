@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*CSS Code */
+*
+{
+  text-decoration: none;
+}
+header{
+  background-color: #0DABFF;
+  width: 100%;
+  height: 100px;
+
+}
+header .header-brand
+{
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+header nav ul
+{
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+header nav ul li
+{
+  display:inline-block;
+  float: left;
+  list-style: none;
+  padding: 0px 10px;
+}
+header nav ul li a
+{
+	text-transform: uppercase;
+  font-size: 13px;
+  color: #111;
+}
+
+@media only screen and (min-width: 1000px)
+{
+	header
+	{
+		background-image: url(img/leh.png);
+		background-repeat: no-repeat;
+		background-position: 95%;
+		background-size: 25%;
+	}
+	header .header-brand
+	{
+	  margin: 31px 0 31px;
+	  text-align: left;
+	  padding: 0px 20px 0px 40px;
+		line-height: 38px;
+		border-right: 3px solid #111;
+		float: left;
+	}
+	header nav ul
+	{
+	  margin: 20px 0px 20px 20px;
+		float:left;
+		text-align: center;
+	}
+	header nav ul li a
+	{
+		font-size: 15px;
+		line-height: 60px;
+	}
+	.header-current a
+	{
+		color: blue;
+	}
+}
+
+/*INDEX*/
+
+
+.index-banner
+{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(img/col.jpg);
+  background-repeat: no-repeat;
+  /*background-position: 0% 65%;*/
+	background-position: center;
+  background-size: cover;
+  display: table;
+}
+.vertical-center
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.members-banner
+{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(img/member.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.members-banner h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.wrapper
+{
+	width: 80%;
+	margin: 50px auto;
+}
+.wrapper p
+{
+	margin: 40px 10px;
+	font-size: 20px;
+}
+.wrapper p img
+{
+	width: 100%;
+}
+.row
+{
+	margin: 20px auto 20px;
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:center;
+	align-content:space-around;
+}
+.column
+{
+	margin-bottom: 20px;
+	margin-left: 5px;
+	flex-basis:50%;
+	padding: 0 8px;
+}
+.card
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container
+{
+	padding: 10px 16px;
+
+}
+.current-members-title
+{
+	width: 60%;
+	margin: 40px auto 40px;
+	/*background-color: red;*/
+	text-align: center;
+	border-bottom: 3px solid grey;
+}
+.current-members-title
+{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+.publications-work
+{
+	font-size: 20px;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+.publications-work li
+{
+	margin-bottom: 20px;
+}
+
+#map
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 300px;
+	width: 300px;
+}
+.contact-location
+{
+	text-align: center;
+}
+
+@media only screen and (min-width: 1000px)
+{
+	.wrapper
+	{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.wrapper p
+	{
+		padding: 0 auto;
+	}
+	.index-banner
+	{
+	  width: 100%;
+	  height: 400px;
+	}
+	.members-banner
+	{
+	 	background-position: 0 40%;
+	  width: 100%;
+	  height: 400px;
+	}
+	.wrapper p img
+	{
+		margin-left: 20px;
+		margin-bottom: 20px;
+		width: 550px !important;
+		float:right;
+	}
+
+	.row
+	{
+		margin: 20px auto 20px;
+		width: 1000px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:center;
+		align-content:space-around;
+
+	}
+	.column
+	{
+		margin-bottom: 20px;
+		margin-left: 10px;
+		flex-basis:30%;
+		padding: 0 8px;
+	}
+	.card
+	{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+	 #map
+	 {
+		 margin-left: auto;
+		 margin-right: auto;
+		 margin-top: 30px;
+		 margin-bottom: 30px;
+		 padding-left: 15px;
+		 padding-right: 15px;
+		 height: 300px;
+		 width: 600px;
+	 }
+	 .research-container
+	 {
+		 display: block;
+		 width: 100%;
+		 margin-top: 30px;
+		 margin-bottom: 15px;
+		 border-bottom: 2px solid;
+		 overflow:hidden;
+	 }
+	 .research-container h2
+	 {
+		 font-size: 30px;
+		 text-align: center;
+	 }
+
+	 .research-container .research-small-container
+	 {
+		 display: block;
+		 width: 50%;
+		 float: left;
+	 }
+	 .research-container .research-small-container
+	 {
+		 margin-top: 50px;
+		 margin-bottom: 50px;
+	 }
+	 .research-container .research-small-container img
+	 {
+		 width: 90%;
+		 margin-top: 50px;
+		 margin-bottom: 50px;	 }
+}
+
+
+/*Footer Section*/
+@media only screen and (min-width: 1000px)
+{
+	footer p
+	{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 24px;
+		display: block;
+		color: #fff;
+		text-align: center;
+		line-height:40px;
+	}
+}
+footer
+{
+	background-image: url(img/logo2.png);
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	background-size: 7%;
+	width: calc(100%-80px);
+	padding: 30px 0px;
+	background-color: #111;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+footer p
+{
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
