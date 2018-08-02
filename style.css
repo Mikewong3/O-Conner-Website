@@ -230,7 +230,6 @@ header nav ul li a {
   padding-top: 20px;
   margin-bottom: 50px;
 }
-
 .publications-work ol{
   margin-bottom: 20px;
   list-style-type: decimal;
@@ -239,7 +238,6 @@ header nav ul li a {
 {
   margin-bottom: 20px;
 }
-
 
 #map {
   margin-left: auto;
@@ -252,8 +250,26 @@ header nav ul li a {
   width: 300px;
 }
 
-.contact-location {
+.contact-container
+{
+  margin-top: 20px;
+  width: 100%;
+}
+.contact-container img
+{
+  width: 100%;
+}
+.contact-container h1
+{
+  font-size: 20px;
+  font-weight: 10px;
   text-align: center;
+}
+.contact-container p
+{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .research-container {
@@ -340,6 +356,27 @@ header nav ul li a {
     padding-right: 15px;
     height: 300px;
     width: 600px;
+  }
+  .contact-container
+  {
+    width: 700px;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .contact-container img
+  {
+    float: left;
+    width: 50%;
+    margin: 10px;
+  }
+  .contact-container h1
+  {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 20px;
+    float: left;
   }
   .research-container .research-small-container {
     width: 50%;

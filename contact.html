@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>O'Conner Lab</title>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class = "header-brand">Home</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="member.html">Members</a>
+        </li>
+        <li>
+          <a href="research.html">Research</a>
+        </li>
+        <li>
+          <a href="publication.html">Publication</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="index-banner">
+      <div class="vertical-center">
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div id="map"></div>
+      <script>
+      function initMap()
+      {
+        var location = {lat: 40.873318,lng: -73.894139};
+        var map = new google.maps.Map(document.getElementById("map"),
+        {
+          zoom: 16,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9HNincjv6W8i-eoDbD5DX-Icj-H5OwjE&callback=initMap">
+      </script>
+
+      <div class="contact-container">
+        <img src="img/Naphtali_profile.jpg" alt="Naphtali Profile Picture"/>
+        <h1>Naphtali A. O'Connor</h1>
+        <p>
+          Associate Professor<br />
+          Phone: (718) 960-8678<br />
+          Office: Davis Hall 326<br />
+          Email: naphtali.oconnor@lehman.cuny.edu<br />
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Lehman College <br> Davis Hall 326 <br />250 Bedford Park Blvd W, Bronx, NY 10468 <br > naphtali.oconnor@lehman.cuny.edu
+    </p>
+  </footer>
+
+</body>
+
+</html>
