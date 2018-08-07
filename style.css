@@ -112,7 +112,10 @@ header nav ul li a {
 }
 
 /*INDEX*/
-
+body
+{
+  background-color: #F1F1F1;
+}
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -210,6 +213,13 @@ header nav ul li a {
 .container {
   padding: 10px 16px;
 }
+.container h2
+{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-style: bold;
+}
 
 .current-members-title {
   width: 60%;
@@ -217,13 +227,30 @@ header nav ul li a {
   /*background-color: red;*/
   text-align: center;
   border-bottom: 3px solid grey;
-}
-
-.current-members-title {
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 30px;
 }
+
+.current-members-name
+{
+  width: 50%;
+  margin: 0 auto;
+}
+.current-members-name ul
+{
+  text-align: left;
+  list-style-type: circle;
+}
+.current-members-name ul li
+{
+  line-height: 30px;
+  font-size: 17px;
+  font-weight:300;
+}
+
+
+
 
 .publications-work {
   font-size: 20px;
